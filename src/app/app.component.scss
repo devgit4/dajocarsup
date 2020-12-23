@@ -1,0 +1,60 @@
+
+
+.wrapper {
+  //  position: relative;
+}
+.background{
+    color: #999999;
+ //  position: relative;
+   height: 100%;
+    top: 0;
+    left: 0;
+  //  z-index: -10000000;
+    width: 100%;
+}
+// .backgroundFixed{
+//     color: #999999;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -100;
+// }
+.content{
+    
+}
+.navBar {
+    position: absolute;
+    z-index: 100;
+    top:20px;
+    width: 100%;
+}
+.navBarfixed {
+    position: fixed;
+   // -webkit-transition: top 1s;
+   // transition: top 1s;
+    top:0;
+    width: 100%;
+    z-index: 10000000;
+
+   // overflow: hidden;
+   // top: 0;
+}
+.containerWidth {
+    min-width: 100%;
+}
+.containerWidthCero {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.marcas {
+    position: relative;
+   // top: 570px;
+   // z-index: -100;
+    width: 100%;
+}
+// .marcasFixed {
+//     position: relative;
+//     top: 490px;
+//     z-index: -100;
+// }

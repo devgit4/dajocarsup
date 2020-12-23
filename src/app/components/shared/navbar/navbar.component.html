@@ -1,0 +1,38 @@
+
+<nav (scroll)="onScroll($event)" 
+    class="container"
+    [ngClass]="{
+    containerRelative: downScroll === 0,
+    containerFixed: downScroll === 1 }">
+    <div class="leftSide">
+        <a>
+            VEHÍCULOS
+        </a>
+        <a>
+            VIDA JEEP
+        </a>
+        <a>
+            OFERTAS
+        </a>
+        <a>
+            TRAYECTORIA
+        </a>
+    </div>
+    <div class="logo">
+        <img src="assets/images/dajo_logo.png" height="60px" width="30px">
+    </div>
+    <div class="leftSide">
+        <a>
+            LUBRICANTES
+        </a>
+        <a>
+            ACEITES
+        </a>
+        <a>
+            CORREAS
+        </a>
+        <a>
+            CAPACIDAD
+        </a>
+    </div>
+</nav>

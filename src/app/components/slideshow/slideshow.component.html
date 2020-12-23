@@ -1,0 +1,68 @@
+<!-- 
+<div [ngStyle]="{background: 'url(assets/images/backGround/photo2.jpg)'}"
+    class="imageBack">
+    <div class="navBar">
+        <app-navbar></app-navbar>
+    </div>
+</div> -->
+
+
+<ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper imageBack">
+        <img src="assets/images/backGround/jeep1440.jpg" 
+         class="imageBack" width="100%"
+        alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="title">DAJO CARS</h3>
+        <p class="subt">A la vanguardia en repuestos en Venezuela y Latinoamérica</p>
+      </div>
+
+    
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper imageBack">
+        <img src="assets/images/backGround/photo3.jpg"
+        class="imageBack"
+         width="100%"
+        alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3 class="title">DAJO CARS</h3>
+        <p class="subt">A la vanguardia en repuestos en Venezuela y Latinoamérica</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  
+  <div class="windowEmergTop">
+    <div class="logos">
+      <img src="assets/images/backGround/JeepLogo.png" width="80px" height="35px">
+      <!-- <img src="assets/images/backGround/FordLogo.png" width="80px" height="30px" class="">
+      <img src="assets/images/backGround/ChevLogo.png" width="80px" height="35px" class=""> -->
+    </div>
+  
+    <div class="titulo">
+     ENCUENTRA EL REPUESTO
+     <div>
+      PARA TU VEHÍCULO
+    </div>
+    </div>
+    
+    <!-- <div class="sec1">
+      ENTREGAS A DOMICILIO
+    </div>
+    <div class="sec1">
+      SERVICIO DE CALIDAD
+    </div>
+    <div class="sec1">
+      ATENCIÓN DE PRIMERA
+    </div> -->
+    <div class="search">
+    <input placeholder="Buscar">
+    <button class="button">
+     BUSCAR REPUESTO         
+    </button>
+  </div>
+   </div>

@@ -1,0 +1,23 @@
+
+<div class="wrapper">
+  
+  <div [ngClass]="{ navBar: downScroll === 0, 
+                    navBarfixed: downScroll === 1 }" 
+                    (scroll)="onScroll($event)" >
+  <div  [ngClass]="{ containerWidth: downScroll === 0, 
+                     containerWidthCero: downScroll === 1 }" >
+  <app-navbar></app-navbar>
+  </div>
+  </div>
+
+  <div class="background">
+  <app-slideshow></app-slideshow>
+  </div>
+
+</div>
+
+<div class="marcas">
+<router-outlet>
+  
+</router-outlet>
+</div>
