@@ -11,6 +11,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JodaComponent } from './src/app/components/joda/joda.component';
+import { NavbarMobileComponent } from './components/shared/navbar-mobile/navbar-mobile.component';
+import { SlideshowMComponent } from './components/slideshow-m/slideshow-m.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { JodaComponent } from './src/app/components/joda/joda.component';
     HomeComponent,
     NavbarComponent,
     SlideshowComponent,
-    JodaComponent
+    JodaComponent,
+    NavbarMobileComponent,
+    SlideshowMComponent
   ],
   imports: [
     BrowserModule,

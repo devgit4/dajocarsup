@@ -1,21 +1,44 @@
 
 <div class="wrapper">
   
-  <div [ngClass]="{ navBar: downScroll === 0, 
-                    navBarfixed: downScroll === 1 }" 
-                    (scroll)="onScroll($event)" >
-  <div  [ngClass]="{ containerWidth: downScroll === 0, 
-                     containerWidthCero: downScroll === 1 }" >
-  <app-navbar></app-navbar>
+  <!-- navbar -->
+  <div *ngIf="device == true">
+    <div class="navBarMobile" (scroll)="onScroll($event)">
+    <div [ngClass]="{ containerWidth: downScroll === 0, 
+       containerWidthCero: downScroll === 1 }">
+
+      <!-- <app-navbar-mobile></app-navbar-mobile> -->
+      <!-- <app-navbar></app-navbar> -->
+
+      <div>
+        <app-navbar-mobile></app-navbar-mobile>
+      </div>
+    </div>
   </div>
+  </div>
+  <div *ngIf="device == false">
+    <div [ngClass]="{ navBar: downScroll === 0, 
+        navBarfixed: downScroll === 1 }" (scroll)="onScroll($event)">
+      <div [ngClass]="{ containerWidth: downScroll === 0, 
+         containerWidthCero: downScroll === 1 }">
+        <div>
+          <app-navbar></app-navbar>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="background">
+  <!-- slideshow -->
+  <div *ngIf="device == false" class="background">
   <app-slideshow></app-slideshow>
   </div>
+  <div *ngIf="device == true" class="background">
+    <app-slideshow-m></app-slideshow-m>
+    </div>
 
 </div>
 
+<!-- marcas de carro -->
 <div class="marcas">
 <router-outlet>
   

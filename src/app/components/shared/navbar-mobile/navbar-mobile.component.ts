@@ -1,16 +1,16 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-navbar-mobile',
+  templateUrl: './navbar-mobile.component.html',
+  styleUrls: ['./navbar-mobile.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarMobileComponent implements OnInit {
   downScroll = 0;
   constructor() { }
   ngOnInit(): void {
   }
-  
+
   @HostListener('window:scroll', ['$event']) // for window scroll events
   
   onScroll(event) {
