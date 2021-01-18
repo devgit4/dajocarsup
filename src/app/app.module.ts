@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JodaComponent } from './src/app/components/joda/joda.component';
 import { NavbarMobileComponent } from './components/shared/navbar-mobile/navbar-mobile.component';
 import { SlideshowMComponent } from './components/slideshow-m/slideshow-m.component';
+import { HomeMComponent } from './components/home-m/home-m.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SlideshowMComponent } from './components/slideshow-m/slideshow-m.compon
     SlideshowComponent,
     JodaComponent,
     NavbarMobileComponent,
-    SlideshowMComponent
+    SlideshowMComponent,
+    HomeMComponent
   ],
   imports: [
     BrowserModule,
