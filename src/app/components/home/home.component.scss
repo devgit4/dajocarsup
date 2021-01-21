@@ -2,44 +2,43 @@ body
 {
     font-size: 1.2vw;
 }
-
 // Menu
-.container {    
-    background-color: white;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    border-radius: 3px;
-    z-index: 10000; 
-    height: 75px;
-    .logo {
-    margin: 0 auto;
-    padding: 5px 5px;
-    }
-    .leftSide {
-     margin: 0 auto;
-   //  margin-top: 30px;
-     a {
-         margin-left: 15px;
-     }
-    }   
- }
- .containerRelative {
-     z-index: 10000; 
-     min-width: 90%;
-     transition: min-width 0.8s;
- }
- .containerFixed {
-     z-index: 10000; 
-     min-width: 100%;
-     transition: min-width 0.8s;
-    border-radius: 0px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
-    box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
-     // background-color: #000000;
-     // color: #f9f9f9;
- }
+// .container {    
+//     background-color: white;
+//     display: flex;
+//     align-items: center;
+//     font-weight: bold;
+//     border-radius: 3px;
+//     z-index: 10000; 
+//     height: 75px;
+//     .logo {
+//     margin: 0 auto;
+//     padding: 5px 5px;
+//     }
+//     .leftSide {
+//      margin: 0 auto;
+//    //  margin-top: 30px;
+//      a {
+//          margin-left: 15px;
+//      }
+//     }   
+//  }
+//  .containerRelative {
+//      z-index: 10000; 
+//      min-width: 90%;
+//      transition: min-width 0.8s;
+//  }
+//  .containerFixed {
+//      z-index: 10000; 
+//      min-width: 100%;
+//      transition: min-width 0.8s;
+//     border-radius: 0px;
+//     -webkit-box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
+//     -moz-box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
+//     box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
+//      // background-color: #000000;
+//      // color: #f9f9f9;
+//  }
 .whatsapp {
     position: fixed;
     right: 20px;
@@ -150,33 +149,6 @@ body
        opacity: 1;
     }
   }
-
-
-// .backMedium {
-//     position: absolute;
-
-//     width: 100%;
-//     display: grid;
-//     grid-column: auto 900px;
-//     justify-content: space-around;
-//    // justify-content: space-around;
-//     .backM1 {
-//         grid-column-start: 1;
-//         background-color: #b9b9b9;
-//         color: #7c7c7c;
-//         border-right: 1px solid #343434;
-//         font-size: 2.5rem;
-//         font-weight: bold;
-//         padding: 15px;
-//         text-align: center;
-//         display: flex;
-//     align-items: center;
-//     }
-//     .backM2 {
-//         height: 500px;
-//         grid-column-start: 2;
-//     }
-// }
 .backM3 {
     // background-image: url('');    
     //height: 370px; 
@@ -355,58 +327,6 @@ body
            height: 85px;
        }
    }
-
-
-// .backJeepAb {
-//     position: relative;
-//     width: 100%;
-//     height: 500px;
-//     .interroga1 {
-//         position: absolute;
-//         left: 0px;
-//         opacity: 0.5;
-
-//     }
-//     .letras {
-//         position: absolute;
-//         left: 0px;
-//         width: 250px;
-//         .tituloLetras {
-//                 font-size: 5.5rem;
-//               //  display: inline-block;
-//                 line-height: 74px;
-//                 height: 75px;
-//         }
-//     }
-//     .midAb {
-//         position: absolute;
-//         left: 0; 
-//   right: 0; 
-//   margin-left: auto; 
-//   margin-right: auto;
-//         width: 500px;
-//     }
-//     .interroga2 {
-//         position: absolute;
-//         right: 0px;
-//         opacity: 0.5;
-//     }
-//     .letras2 {
-//         position: absolute;
-//         right: 0px;
-//         width: 250px;
-//         .tituloLetras2 {
-//             margin-top: 50px;
-//                 font-size: 5.5rem;
-//               //  display: inline-block;
-//                 line-height: 74px;
-//                 height: 75px;
-//         }
-//     }
-// }
-
-
-
 .backJeep {
     width: 100%;
 
@@ -446,97 +366,6 @@ body
     word-wrap: break-word;
     /* IE */
 }
-
-// .windowsM3 {
-
-//     position: absolute;
-
-// }
-// .marcaAgua {
-//     position: absolute;
-//     top: 0px;
-//     left: 0px;
-//     font-size: 150px;
-//     font-weight: bold;
-//     letter-spacing: 20px;
-//     color: #eaeaea;
-//     right: 0px;
-//     z-index: -100;
-//     text-align: center;
-
-// }
-
-//     .backWhite {
-//         display: grid;
-
-//         justify-content: space-around;
-//         align-content: center;
-//         background-color: #fafafa;
-
-//     z-index: 100;
-//         padding: 30px 0px 30px 0;
-//         position: relative;
-//         .front1 {
-//             grid-column-start: 1;
-
-//             .titulo {
-//                 font-weight: bold;
-
-//             }
-//             .marcaAceite {
-//                 border-top: 1px solid #ececec;
-//                 margin-bottom: 80px;
-//             }
-//           //  opacity: 0.8;
-//         }
-//         .front2 {
-//             grid-column-start: 2;
-//           //  opacity: 0.8;
-//         }
-//         .front3 {
-//             grid-column-start: 3;
-//           //  opacity: 0.8;
-//         }
-//         .front4 {
-//             grid-column-start: 4;
-//           //  opacity: 0.8;
-//         }
-//         .imgFront {
-//             border-radius: 5px;
-//         }
-//     }
-
-
-// .windowWhite {
-//   //  background-color: rgba(0,0,0,0.7);
-//    border: 2px solid #12BB0C;
-//    border-radius: 2px;
-//     color: #12BB0C;
-//     text-align: center;
-//     position: absolute;
-//     top: 330px;    
-//     margin-left: 50px;
-//     padding: 10px 0 10px 0;
-//     width: 120px;
-//     z-index: 100;
-//    // border-bottom-left-radius: 10px;
-//    // border-bottom-right-radius: 10px;
-//     cursor: pointer;    
-// }
-// .windowWhite:hover {
-//   //  top: 30px;    
-//   //  transition: top 0.8s;
-//   //  height: 200px;
-//   //  border-radius: 10px;
-//   background-color: #12BB0C;
-
-// }
-
-
-
-
-
-
 .cargaPesada {
     z-index: 1000;
     position: relative;
