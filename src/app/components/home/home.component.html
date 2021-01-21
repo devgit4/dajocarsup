@@ -1,13 +1,53 @@
-
 <div *ngIf="device == false">
 
+<!-- Menu -->
+<!-- <nav (scroll)="onScroll($event)" 
+    class="container"
+    [ngClass]="{
+    containerRelative: downScroll === 0,
+    containerFixed: downScroll === 1 }">
+    <div class="leftSide">
+        <a>
+            VEHÍCULOS
+        </a>
+        <a>
+            VIDA JEEP
+        </a>
+        <a>
+            OFERTAS
+        </a>
+        <a>
+            TRAYECTORIA
+        </a>
+    </div>
+    <div class="logo">
+        <img src="assets/images/dajo_logo.png" height="60px" width="30px">
+    </div>
+    <div class="leftSide">
+        <a (click)="scrollToElement(target)">
+      PRODUCTOS
+        </a>
+        <a>
+            ACEITES
+        </a>
+        <a>
+            CORREAS
+        </a>
+        <a>
+            CAPACIDAD
+        </a>
+    </div>
+</nav> -->
+
+
+
 <div class="whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=Pregunte por sus repuestos" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=" target="_blank">
         <img src="assets/images/backGround/whatsapp.png" class="imgWhatsapp" alt="">
     </a>
 </div>
 
-<div class="back">
+<div id="targetV" class="back">
     <div class="back1 imgLogo">
         <img src="assets/images/backGround/JeepLogo.png" class="">
     </div>
@@ -47,7 +87,7 @@
             </div>
         </div>
         <div class="search">
-            <a href="https://api.whatsapp.com/send?phone=+584140721247&text=Pregunte por sus repuestos" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+584140721247&text=" target="_blank">
                 <button class="button">
                     DESCUBRE MÁS
                     <div class="arrow rightArrow">
@@ -139,7 +179,7 @@
         TextoBlackFrame: activatetextoblack === 1 }">
         ¿NO ENCUENTRAS EL REPUESTO QUE BUSCAS ?  
     </div>
-    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=Pregunte por sus repuestos" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=" target="_blank">
         <button class="ventasBot">
             HABLEMOS
         </button>
@@ -151,7 +191,7 @@
     <div class="backAc">
         
     </div>
-    <div class="container">
+    <div class="containerCargaPesada">
         <div [ngClass]="{ ac1: activateac1 === 0, 
             ac1Frame: activateac1 === 1 }">
             <div class="tituloAc1">
@@ -176,7 +216,7 @@
                 para nosotros es satisfacer la necesidades de nuestros clientes.
                 <br><br><br>
                 <div class="info">
-                    Más información
+                    Más información 
                 </div>
             </div>
         </div>
@@ -202,7 +242,7 @@
             , camiones, buses, busetas.
         </div>
         <div class="search">
-    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=Pregunte por sus repuestos" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=" target="_blank">
         <button class="button">
             DESCUBRE MÁS
             <div class="arrow rightArrow">
@@ -213,7 +253,7 @@
     </div>
 </div>
 
-<div class="backGray">
+<div id="target" class="backGray">
     <div class="shell">
         <img src="assets/images/backGround/shell100.png" class="imgFront" alt="">
     </div>
@@ -372,7 +412,7 @@
         <button class="ubiBot">
             NUESTRA SEDE
         </button>
-    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=Pregunte por sus repuestos" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+584140721247&text=" target="_blank">
         <button class="ventasBot">
             CONTACTARSE CON VENTAS
         </button>

@@ -1,6 +1,15 @@
+<div
+  (click)="scrollToElement('header')"
+  [ngClass]="{
+  hideTop: downScroll === 0,
+  showTop: downScroll === 1 }" class="topup">
+  <div class="arrow up"></div>
+</div>
 
-<div class="wrapper">
-  
+<!-- marca para la flecha del top -->
+<div id="header"></div>
+
+<div class="wrapper">  
   <!-- navbar -->
   <div *ngIf="device == true">
     <div class="navBarMobile" (scroll)="onScroll($event)">
@@ -18,16 +27,56 @@
   </div>
   <div *ngIf="device == false">
     <div [ngClass]="{ navBar: downScroll === 0, 
-        navBarfixed: downScroll === 1 }" (scroll)="onScroll($event)">
+                      navBarfixed: downScroll === 1 }" 
+                      (scroll)="onScroll($event)">
       <div [ngClass]="{ containerWidth: downScroll === 0, 
-         containerWidthCero: downScroll === 1 }">
-        <div>
-          <app-navbar></app-navbar>
-        </div>
+                        containerWidthCero: downScroll === 1 }">
+       
+          <!-- <app-navbar></app-navbar> -->          
+<nav
+class="container"
+[ngClass]="{
+containerRelative: downScroll === 0,
+containerFixed: downScroll === 1 }">
+<div class="leftSide">
+  <a (click)="scrollToElement('targetV')">
+        VEHÍCULOS
+    </a>
+    <a>
+        VIDA JEEP
+    </a>
+    <a>
+        OFERTAS
+    </a>
+    <a>
+        TRAYECTORIA
+    </a>
+</div>
+<div class="logo">
+    <img src="assets/images/dajo_logo.png" height="60px" width="30px">
+</div>
+<div class="leftSide">
+    <a (click)="scrollToElement('target')">
+        PRODUCTOS
+    </a>
+    <a>
+        ACEITES
+    </a>
+    <a>
+        CORREAS
+    </a>
+    <a>
+        CAPACIDAD
+    </a>
+</div>
+</nav>
+       
       </div>
     </div>
   </div>
 
+
+  
   <!-- slideshow -->
   <div *ngIf="device == false" class="background">
   <app-slideshow></app-slideshow>
@@ -40,7 +89,10 @@
 
 <!-- marcas de carro -->
 <div class="marcas">
-<router-outlet>
-  
-</router-outlet>
+<app-home></app-home>
+<!-- HOME -->
+
+
+<!-- <router-outlet>  
+</router-outlet> -->
 </div>

@@ -269,7 +269,7 @@ transform: translateX(-50%)
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: #313131;
+    background-color: #cccccc;
 
     .left {
         opacity: 0.3;
@@ -277,20 +277,23 @@ transform: translateX(-50%)
     }
 
     .contacto {
-        color: #ababab;
+        color: #434343;
         text-align: end;
         .tituloW {
             margin-top: 0px;
-            color: white;
-            font-size: 0.6rem;
+            color: rgb(22, 22, 22);
+            font-size: 0.5rem;
+            font-weight: bold;
         }
         .tituloWT {
             margin-top: 10px;
         }
 .telf_mail {
+
     font-size: 0.6rem;
 }
 .mail {
+
     font-size: 0.6rem;
 }
         .redes {
@@ -306,7 +309,7 @@ transform: translateX(-50%)
     width: 100%;
     position: relative;
     top: 120px;
-    height: 110px;
+    line-height: 20px;
     /* line-height: 90px; */
     /* display: flex; */
     font-size: 0.5rem;

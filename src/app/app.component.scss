@@ -1,8 +1,6 @@
 
 
-.wrapper {
-  //  position: relative;
-}
+
 .background{
     color: #999999;
  //  position: relative;
@@ -19,14 +17,14 @@
 //     left: 0;
 //     z-index: -100;
 // }
-.content{
-    
-}
+
 .navBar {
     position: absolute;
     z-index: 100;
     top:20px;
     width: 100%;
+    transition: top 0.2s;
+
 }
 .navBarfixed {
     position: fixed;
@@ -35,6 +33,7 @@
     top:0;
     width: 100%;
     z-index: 10000000;
+    transition: top 0.2s;
 
    // overflow: hidden;
    // top: 0;
@@ -62,8 +61,78 @@
    // z-index: -100;
     width: 100%;
 }
-// .marcasFixed {
-//     position: relative;
-//     top: 490px;
-//     z-index: -100;
-// }
+
+// navbar
+.container {    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 10000; 
+    height: 75px;
+    .logo {
+    margin: 0 auto;
+    padding: 5px 5px;
+    }
+    .leftSide {
+     margin: 0 auto;
+   //  margin-top: 30px;
+     a {
+         margin-left: 15px;
+         color: #444444;
+         cursor: pointer;
+     }
+     a:hover {
+        color: #000000;
+         
+     }
+    }   
+ }
+ .containerRelative {
+     z-index: 10000; 
+     min-width: 90%;
+     transition: min-width 0.8s;
+ }
+ .containerFixed {
+     z-index: 10000; 
+     min-width: 100%;
+     transition: min-width 0.8s;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
+    box-shadow: 0px 2px 5px 0px rgba(237,237,237,1);
+     // background-color: #000000;
+     // color: #f9f9f9;
+ }
+
+ .topup {
+    position: fixed;
+    right: 30px;
+    z-index: 10000;
+    bottom: 20px;
+    cursor: pointer;  
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #dcdcdc;
+}
+.arrow {
+    border: solid #383838;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .hideTop {
+      display: none;
+  }
+  .showTop {
+      display: block;
+  }
+
